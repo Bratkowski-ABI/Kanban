@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='corktable.css') }}">
+    <body>
+    <table style="width:100%">
+        <tr>
+            <th style="width:33%">ToDo</th>
+            <th style="width:33%">Doing</th>
+            <th style="width:33%">Done</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#" >
+                            <p>Topic</p>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#" >
+                            <p>First Topic</p>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+</table>
+
+
+
+
+
+
+
+
+    <div class="wrapper">
+        <div class="tblmeet">
+            {% if rq %}
+                {% for rqs in rq %}
+                  <ul>
+                    <li>
+                      <a href="#" >
+                        <p>{{ rq["name"] }} </p>
+                        <p>{{ rq["id"] }} </p>
+                      </a>
+                    </li>
+                  </ul>
+
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="itemright">
+            <a href="#" class="external-link">Add meeting</a>
+        </div>
+    </div>
+
+    </body>
+</html>
+
+
+

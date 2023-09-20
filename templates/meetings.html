@@ -1,0 +1,31 @@
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='greentable.css') }}">
+    <body>
+
+    <h2>Meetings</h2>
+
+    <div class="wrapper">
+        <div class="tblmeet">
+         <p>
+            <span class="tag is-rounded is-warning">{{ meeting["name"] or "No meeting in plan." }}</span>
+         </p>
+         <p>
+            <span class="tag is-rounded is-warning">{{ meeting["when"]  }}</span>
+         </p>
+         <p>
+            <span class="tag is-rounded is-warning">{{ meeting["what"] }}</span>
+         </p>
+        </div>
+    </div>
+
+    <div class="itemright">
+        <a href="/meeting/add" class="external-link">Add meeting</a>
+    </div>
+
+
+
+    </body>
+</html>
+
+
+

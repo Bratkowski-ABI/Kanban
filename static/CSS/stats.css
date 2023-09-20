@@ -1,0 +1,49 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("font/Fontonyel.ttf");
+}
+
+body {
+  font-family: 'Lato';
+  background-image: url("img/cork.jpg");
+  background-size:     contain;
+  background-position: center;
+  background-color: #cccccc;
+}
+
+*{
+  margin:5;
+  padding:5;
+}
+
+h2 {
+  font-family: 'myFirstFont';
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+p {
+  font-family: 'myFirstFont';
+  font-size: 1.3rem;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:pink;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 10px 10x 7px rgba(33,33,33,.7);
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
+}
+

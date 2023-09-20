@@ -1,0 +1,21 @@
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='stats.css') }}">
+<body>
+    <ul>
+      <li>
+        <a href="#" >
+            <h2>Stats</h2>
+            <p>
+              Solved: {{ stats["solved"] or "0" }}
+            </p>
+            <p>
+              Waiting: {{ stats["waiting"] or "0" }}
+            </p>
+        </a>
+      </li>
+    </ul>
+</body>
+</html>
+
+
+

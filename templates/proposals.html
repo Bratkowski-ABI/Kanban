@@ -1,0 +1,27 @@
+<html>
+<link rel="stylesheet" href="{{ url_for('static', filename='greentable.css') }}">
+    <body>
+    <h2>Proposals</h2>
+    <div class="wrapper">
+        <div class="tblmeet">
+            {% if proposals %}
+                {% for proposal in proposals %}
+                    <p>
+                        <span class="tag is-rounded is-warning">{{ proposal["name"] }}     {{ proposal["when"] }}</span>
+                    </p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="itemright">
+            <a href="#" class="external-link">Add meeting</a>
+            <a href="#" class="external-link-del">Delete meeting</a>
+        </div>
+    </div>
+
+
+    </body>
+</html>
+
+
+
