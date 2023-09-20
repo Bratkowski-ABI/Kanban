@@ -1,4 +1,3 @@
-from mflix.mflix import app
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 from mflix.db import get_user, add_user
