@@ -1,6 +1,6 @@
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
-from mflix.db import get_user, add_user
+from db import get_user, add_user
 import flask_login
 from flask_bcrypt import Bcrypt
 
